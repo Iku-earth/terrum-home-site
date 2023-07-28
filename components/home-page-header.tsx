@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 export const LandingHeader = () => {
@@ -37,15 +38,17 @@ export const LandingHeader = () => {
       {/* Add an additional wrapper for the blurred background */}
       {isScrolled && <div className="backdrop-blur-md absolute inset-0"></div>}
       <div className="relative flex items-center justify-between w-full">
-        <div className="flex items-center">
-          {/* Replace 'logo.svg' with the path to your logo image */}
-          <img
-            src="terrum_circle.svg"
-            alt="Logo"
-            className="w-12 h-auto lg:ml-8"
-          />
-          <h1 className={`text-lg font-semibold ml-5`}>Terrum</h1>
-        </div>
+        <Link href="/">
+          <div className="flex items-center">
+            {/* Replace 'logo.svg' with the path to your logo image */}
+            <img
+              src="terrum_circle.svg"
+              alt="Logo"
+              className="w-12 h-auto lg:ml-8"
+            />
+            <h1 className={`text-lg font-semibold ml-5`}>Terrum</h1>
+          </div>
+        </Link>
 
         {/* Show hamburger menu in mobile view */}
         {/* <div className="lg:hidden">
