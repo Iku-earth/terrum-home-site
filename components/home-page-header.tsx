@@ -4,7 +4,9 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 export const LandingHeader = () => {
-  const [isScrolled, setIsScrolled] = useState(() => window.scrollY > 0);
+  const [isScrolled, setIsScrolled] = useState(() =>
+    typeof window !== "undefined" ? window.scrollY > 0 : false
+  );
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
