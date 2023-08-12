@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
@@ -43,7 +44,9 @@ export const LandingHeader = () => {
         <Link href="/">
           <div className="flex items-center">
             {/* Replace 'logo.svg' with the path to your logo image */}
-            <img
+            <Image
+              width={24}
+              height={24}
               src="terrum_circle.svg"
               alt="Logo"
               className="w-12 h-auto lg:ml-8"
