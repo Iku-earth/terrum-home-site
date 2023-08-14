@@ -47,7 +47,7 @@ export const LandingHeader = () => {
             <Image
               width={24}
               height={24}
-              src="terrum_circle.svg"
+              src="/terrum_circle.svg"
               alt="Logo"
               className="w-12 h-auto lg:ml-8"
             />
