@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} ${nunito.variable}`}>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-black">
           <LandingHeader />
           {children}
           <footer className="w-full grid grid-flow-col gap-5 justify-center mb-5 text-gray-400">

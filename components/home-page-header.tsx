@@ -51,7 +51,7 @@ export const LandingHeader = () => {
               alt="Logo"
               className="w-12 h-auto lg:ml-8"
             />
-            <h1 className={`text-lg font-semibold ml-5`}>Terrum</h1>
+            <h1 className={`text-lg font-semibold ml-5 text-white`}>Terrum</h1>
           </div>
         </Link>
 

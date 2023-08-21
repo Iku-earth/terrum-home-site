@@ -1,8 +1,8 @@
 export default function PrivacyPolicy() {
   return (
-    <div className="max-w-3xl mx-auto p-4">
+    <div className="max-w-3xl mx-auto p-4 text-white">
       <h1 className="text-2xl font-semibold mb-4">Privacy Policy</h1>
-      <p className="mb-4">Last updated: 15-10-2023</p>
+      <p className="mb-4">Last updated: 15-08-2023</p>
 
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
