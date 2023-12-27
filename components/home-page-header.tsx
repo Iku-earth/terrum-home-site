@@ -56,7 +56,7 @@ export const LandingHeader = () => {
         </Link>
 
         {/* Show hamburger menu in mobile view */}
-        {/* <div className="lg:hidden">
+        <div className="lg:hidden">
           <button
             onClick={toggleMobileMenu}
             className="p-2 text-white focus:outline-none"
@@ -90,12 +90,18 @@ export const LandingHeader = () => {
               ></path>
             </svg>
           </button>
-        </div> */}
+        </div>
 
         {/* Regular navigation links */}
         <div className="hidden lg:flex items-center">
           {/* Add items-center to center the Support option */}
-          {/* <div className="mr-4">Support</div> */}
+          <a
+            href="https://resources.terrum.in"
+            target="_blank"
+            className="mr-4"
+          >
+            Resources
+          </a>
           {/* Add the login button */}
           {/* <button
             onClick={() => {}}
@@ -111,9 +117,13 @@ export const LandingHeader = () => {
         style={{ transformOrigin: "top" }}
       >
         <div className="flex flex-col items-end space-y-4">
-          {/* Replace with mobile navigation links */}
-          <div className="text-white">Support</div>
-          <div className="text-white">Login</div>
+          <a
+            href="https://resources.terrum.in"
+            target="_blank"
+            className="mr-4"
+          >
+            Resources
+          </a>
         </div>
       </div>
     </header>
