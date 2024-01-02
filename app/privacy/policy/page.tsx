@@ -96,9 +96,12 @@ export default function PrivacyPolicy() {
         </p>
         <p className="ml-4">
           5.2. Data Access and Deletion: You can request access to the personal
-          information we hold about you and request its deletion by emailing to
-          me@abhishekan.dev. However, certain information may be retained for
-          legal and legitimate business purposes.
+          information we hold about you and request its deletion by emailing to{" "}
+          <a className="text-blue-500" href="mailto:abhishek@terrum.in">
+            abhishek@terrum.in
+          </a>
+          . However, certain information may be retained for legal and
+          legitimate business purposes.
         </p>
       </section>
 
@@ -127,8 +130,8 @@ export default function PrivacyPolicy() {
         <p className="ml-4">
           If you have any questions, concerns, or requests related to this
           Privacy Policy, please contact us at{" "}
-          <a className="text-blue-500" href="mailto:me@abhishekan.dev">
-            me@abhishekan.dev
+          <a className="text-blue-500" href="mailto:abhishek@terrum.in">
+            abhishek@terrum.in
           </a>
           .
         </p>
@@ -144,8 +147,8 @@ export default function PrivacyPolicy() {
         <p className="ml-4">Name: Mr. Abhishek AN</p>
         <p className="ml-4">
           Email:{" "}
-          <a className="text-blue-500" href="mailto:me@abhishekan.dev">
-            me@abhishekan.dev
+          <a className="text-blue-500" href="mailto:abhishek@terrum.in">
+            abhishek@terrum.in
           </a>
         </p>
       </section>
