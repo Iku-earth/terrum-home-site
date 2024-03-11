@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.iku",
+      "sha256_cert_fingerprints": [
+        "DD:3C:38:5D:63:3E:CD:6E:66:14:F1:EC:30:84:05:74:5E:6A:30:62:C5:43:DC:79:CD:BA:01:39:8C:5C:41:20"
+      ]
+    }
+  }
+]
