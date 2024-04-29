@@ -35,6 +35,13 @@ export default function RootLayout({
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-800"></span>
             </Link>
             <Link
+              href="https://www.instagram.com/terrum.in/"
+              className="group transition duration-300"
+            >
+              Instagram
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-blue-800"></span>
+            </Link>
+            <Link
               href="/privacy/policy"
               className="group transition duration-300"
             >
