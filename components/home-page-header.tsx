@@ -111,7 +111,7 @@ export const LandingHeader = () => {
       </div>
       {/* Mobile menu */}
       <div
-        className={`lg:hidden w-full bg-black z-40 p-4 absolute top-20 right-0 transform transition-transform duration-300 ${
+        className={`lg:hidden w-full bg-transparent z-40 p-4 absolute top-20 right-0 transform transition-transform duration-300 ${
           isMobileMenuOpen ? "scale-y-100" : "scale-y-0"
         }`}
         style={{ transformOrigin: "top" }}
