@@ -10,6 +10,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <a
+                data-umami-event="Open Discord"
                 href="https://discord.gg/c4869U2JjK"
                 className="hover:text-white"
               >
@@ -18,6 +19,7 @@ export default function Footer() {
             </li>
             <li>
               <a
+                data-umami-event="Open Instagram"
                 href="https://www.instagram.com/terrum.in/"
                 className="hover:text-white"
               >
@@ -26,6 +28,7 @@ export default function Footer() {
             </li>
             <li>
               <a
+                data-umami-event="Open LinkedIn"
                 href="https://www.linkedin.com/company/terrum-india/"
                 className="hover:text-white"
               >
@@ -33,7 +36,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://x.com/terrum_in" className="hover:text-white">
+              <a
+                href="https://x.com/terrum_in"
+                data-umami-event="Open X"
+                className="hover:text-white"
+              >
                 X
               </a>
             </li>
@@ -46,6 +53,8 @@ export default function Footer() {
           <a
             href="https://play.google.com/store/apps/details?id=com.iku&hl=en_IN"
             target="_blank"
+            data-umami-event="Go To Playstore"
+            data-umami-event-position="Footer"
             rel="noopener noreferrer"
             className="mb-2"
           >
@@ -70,7 +79,11 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="mb-5 md:mb-0 text-sm text-center">
             <span>&copy; 2024 Terrum. All rights reserved</span> |{" "}
-            <a href="/privacy/policy" className="hover:text-white">
+            <a
+              href="/privacy/policy"
+              data-umami-event="Open Privacy Policy"
+              className="hover:text-white"
+            >
               Privacy Policy
             </a>
           </div>

@@ -19,6 +19,8 @@ export default function Home() {
         </p>
         <div className="w-full h-fit flex flex-col place-items-center my-8 lg:my-12 z-50 focus:outline-none focus:bg-transparent select-none">
           <a
+            data-umami-event="Go To Playstore"
+            data-umami-event-position="Hero"
             href="https://play.google.com/store/apps/details?id=com.iku"
             target="_blank"
           >

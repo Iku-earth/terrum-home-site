@@ -17,6 +17,7 @@ const VolunteerWithUsSection = () => {
         <a
           href="https://forms.gle/BcsYz48YmuMmutPt8"
           target="_blank"
+          data-umami-event="Open Volunteer With Us Form"
           className="bg-[#2a6083] text-white font-semibold py-3 px-6 rounded-lg shadow-md"
         >
           Sign Up to Volunteer

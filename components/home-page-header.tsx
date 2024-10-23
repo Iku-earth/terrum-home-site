@@ -98,6 +98,8 @@ export const LandingHeader = () => {
           <a
             href="https://resources.terrum.in"
             target="_blank"
+            data-umami-event="Open Resources Dashboard"
+            data-umami-event-device="Desktop"
             className="mr-4"
           >
             Resources
@@ -120,6 +122,8 @@ export const LandingHeader = () => {
           <a
             href="https://resources.terrum.in"
             target="_blank"
+            data-umami-event="Open Resources Dashboard"
+            data-umami-event-device="Mobile"
             className="mr-4"
           >
             Resources
