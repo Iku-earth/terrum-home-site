@@ -27,6 +27,11 @@ export default function RootLayout({
           <LandingHeader />
           {children}
           <Footer />
+          <script
+            defer
+            src={process.env.NEXT_PUBLIC_UMAMI_SRC}
+            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+          />
         </div>
       </body>
     </html>
