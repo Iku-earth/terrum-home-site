@@ -51,6 +51,7 @@ export const LandingHeader = () => {
           <button
             onClick={toggleMobileMenu}
             className="p-2 text-white focus:outline-none"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             <svg
               className={`w-6 h-6 ${isMobileMenuOpen ? "hidden" : "block"}`}
