@@ -5,28 +5,22 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 export const LandingHeader = () => {
-  const [isScrolled, setIsScrolled] = useState(() =>
-    typeof window !== "undefined" ? window.scrollY > 0 : false
-  );
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [blurAmount, setBlurAmount] = useState(0);
 
   useEffect(() => {
-    // Add scroll event listener
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      // Adjust this factor to control the speed and amount of blur
+      const newBlur = Math.min(window.scrollY / 100, 10);
+      setBlurAmount(newBlur);
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -34,12 +28,9 @@ export const LandingHeader = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 p-4 ${
-        isScrolled ? "backdrop-blur" : "bg-transparent"
-      }`}
+      className={`sticky top-0 z-50 p-4 bg-opacity-80  transition-all duration-200`}
+      style={{ backdropFilter: `blur(${blurAmount}px)` }}
     >
-      {/* Add an additional wrapper for the blurred background */}
-      {isScrolled && <div className="backdrop-blur-md absolute inset-0"></div>}
       <div className="relative flex items-center justify-between w-full">
         <Link href="/">
           <div className="flex items-center">
