@@ -65,15 +65,24 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function WorkshopPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#071D2B] to-[#111111] text-gray-200">
-      <main className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
-          Smartphones and Sustainability Workshop
+      <header className="container mx-auto px-4 py-6 flex justify-between items-center">
+        <h1 className="text-2xl md:text-3xl font-bold text-white">
+          Smartphones and Sustainability
         </h1>
-
+        <a
+          href="https://rzp.io/rzp/smartphoneworkshop"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-sm md:text-base transition-colors duration-300"
+          data-umami-event="Register Smartphone and Sustainability Workshop Header"
+        >
+          Register Now
+        </a>
+      </header>
+      <main className="container mx-auto px-4 py-8">
         <section className="mb-12">
           <Card className="bg-[#0A2A3F] text-gray-200 border-[#1E3A4F]">
             <CardHeader>
@@ -82,12 +91,23 @@ export default function WorkshopPage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm md:text-base">
+              <p className="text-sm md:text-base mb-4">
                 Join us for an interactive session using the Unboxing Tech
                 Toolkit to explore the hidden story of your smartphone—from its
                 origins and components to its lifecycle and environmental
                 impact.
               </p>
+              <div className="md:hidden">
+                <a
+                  href="https://rzp.io/rzp/smartphoneworkshop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg text-sm inline-block w-full text-center transition-colors duration-300"
+                  data-umami-event="Register Smartphone and Sustainability Workshop Mobile"
+                >
+                  Register Now
+                </a>
+              </div>
             </CardContent>
           </Card>
         </section>
@@ -179,8 +199,9 @@ export default function WorkshopPage() {
           <a
             href="https://rzp.io/rzp/smartphoneworkshop"
             target="_blank"
-            className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-sm md:text-base"
-            data-umami-event="Register Smartphone and Sustainability Workshop"
+            rel="noopener noreferrer"
+            className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-sm md:text-base inline-block transition-colors duration-300"
+            data-umami-event="Register Smartphone and Sustainability Workshop Footer"
           >
             Register Now
           </a>
