@@ -80,7 +80,7 @@ export default function Home() {
       </div>
       {/* Events and Experiences Section */}
       <div className="w-full h-auto mt-8 px-4 md:px-8" id="events-section">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold ms-2 md:ms-6 mt-4 mb-4 text-center md:text-left">
+        <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold ms-2 md:ms-6 mt-4 mb-4 text-center md:text-left">
           Events and Experiences
         </h2>
         <div className="w-full">

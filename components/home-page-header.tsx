@@ -92,7 +92,7 @@ export const LandingHeader = () => {
             target="_blank"
             data-umami-event="Open Resources Dashboard"
             data-umami-event-device="Desktop"
-            className="mr-4"
+            className="text-white mr-4"
           >
             Resources
           </a>
@@ -116,7 +116,7 @@ export const LandingHeader = () => {
             target="_blank"
             data-umami-event="Open Resources Dashboard"
             data-umami-event-device="Mobile"
-            className="mr-4"
+            className="text-white mr-4"
           >
             Resources
           </a>
