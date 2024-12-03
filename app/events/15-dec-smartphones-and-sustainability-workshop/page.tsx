@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -15,6 +14,57 @@ import {
   Calendar,
   Clock,
 } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Smartphones and Sustainability Workshop",
+  description:
+    "Join us for an interactive workshop to uncover the hidden story of your smartphone—from its origins and components to its lifecycle and environmental impact. Learn to be a sustainable tech consumer.",
+  keywords: [
+    "Sustainability",
+    "Sustainability workshop",
+    "Smartphone lifecycle",
+    "Eco-friendly tech",
+    "Sustainable living",
+    "Environmental awareness",
+    "Interactive workshops",
+    "Climate action",
+    "Abhishek AN",
+    "Renuka Pooja",
+    "Terrum events",
+  ],
+  icons: {
+    icon: "/terrum_circle_64x64.ico",
+    apple: "/terrum_circle_64x64.png",
+  },
+  openGraph: {
+    title: "Smartphones and Sustainability Workshop – Learn and Act",
+    locale: "en_US",
+    description:
+      "Discover the environmental impact of smartphones and learn how to make sustainable tech choices. Join our workshop and take action for a better future.",
+    url: "https://terrum.in/events/15-dec-smartphones-and-sustainability-workshop",
+    type: "website",
+    images: [
+      {
+        url: "https://terrum.in/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Smartphones and Sustainability Workshop Banner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@terrum_in",
+    title: "Smartphones and Sustainability Workshop",
+    description:
+      "Uncover the hidden story of your smartphone and learn how to be a responsible tech consumer. Join our workshop for impactful insights and actions.",
+    images: [
+      "https://pbs.twimg.com/profile_images/1776445625254793216/19fhNGuT_400x400.jpg",
+    ],
+  },
+};
+
 
 export default function WorkshopPage() {
   return (
