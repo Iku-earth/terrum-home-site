@@ -32,9 +32,9 @@ export default function SupportASocialOrganisationSection() {
                   </li>
                   <li>
                     Become an extended team member and contribute your skills to
-                    help them grow. We're looking for individuals with expertise
-                    in social media, content creation, event management,
-                    volunteer management, and event curation.
+                    help them grow. We&apos;re looking for individuals with
+                    expertise in social media, content creation, event
+                    management, volunteer management, and event curation.
                   </li>
                 </ul>
               </div>

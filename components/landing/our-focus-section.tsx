@@ -31,7 +31,7 @@ export default function OurFocusSection() {
             <p className="text-lg opacity-90">
               Join a network of individuals who care deeply about
               sustainability, social causes, and making a difference. Whether
-              you're passionate about reducing waste, renewable energy, or
+              you&apos;re passionate about reducing waste, renewable energy, or
               community building, this is your space to share ideas,
               collaborate, and grow.
             </p>
