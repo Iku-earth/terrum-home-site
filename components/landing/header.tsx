@@ -29,9 +29,19 @@ export default function LandingHeader() {
       </Link>
 
       {/* Desktop Navigation */}
-      {/* <div className="hidden md:flex items-center space-x-8">
-        {["About", "Events", "Volunteer", "Resources", "Contact"].map(
-          (item) => (
+      <div className="hidden md:flex items-center space-x-8">
+        {["Resources"].map((item) =>
+          item === "Resources" ? (
+            <a
+              key={item}
+              href="https://resources.terrum.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-white/80 font-medium"
+            >
+              {item}
+            </a>
+          ) : (
             <Link
               key={item}
               href={`/${item.toLowerCase()}`}
@@ -41,10 +51,10 @@ export default function LandingHeader() {
             </Link>
           )
         )}
-      </div> */}
+      </div>
 
       {/* Hamburger Icon */}
-      {/* <button
+      <button
         className="md:hidden text-white focus:outline-none"
         onClick={toggleMenu}
       >
@@ -62,7 +72,7 @@ export default function LandingHeader() {
             d="M4 6h16M4 12h16m-7 6h7"
           />
         </svg>
-      </button> */}
+      </button>
 
       {/* Mobile Navigation Sheet */}
       <div
@@ -93,17 +103,27 @@ export default function LandingHeader() {
 
         {/* Menu Items */}
         <div className="flex flex-col items-center justify-center h-full space-y-8">
-          {["About", "Events", "Volunteer", "Resources", "Contact"].map(
-            (item) => (
-              <Link
-                key={item}
-                href={`/${item.toLowerCase()}`}
-                className="text-2xl font-medium hover:text-white/80"
-                onClick={closeMenu}
-              >
-                {item}
-              </Link>
-            )
+          {["Resources"].map(
+            (item) =>
+              item === "Resources" ? (
+                <a
+                  key={item}
+                  href="https://resources.terrum.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-white/80 font-medium"
+                >
+                  {item}
+                </a>
+              ) : (
+                <Link
+                  key={item}
+                  href={`/${item.toLowerCase()}`}
+                  className="text-white hover:text-white/80 font-medium"
+                >
+                  {item}
+                </Link>
+              )
           )}
         </div>
       </div>
