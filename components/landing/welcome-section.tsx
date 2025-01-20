@@ -125,6 +125,8 @@ export default function WelcomeSection() {
 
                         {/* Join button */}
                         <a
+                            data-umami-event="Join Now"
+                            data-umami-event-section="Welcome"
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://chat.whatsapp.com/FnDMWzV9tcaBz0sVmzh0An"

@@ -37,7 +37,9 @@ export default function OpenSourceDatabaseSection() {
                                 </ul>
                             </div>
                             <div className="flex flex-wrap gap-4">
-                                <a href="https://resources.terrum.in/" target="_blank" rel="noopener noreferrer">
+                                <a data-umami-event="Explore"
+                                   data-umami-event-section="Open source database"
+                                   href="https://resources.terrum.in/" target="_blank" rel="noopener noreferrer">
                                     <Button
                                         className="bg-[#FFB703] hover:bg-[#FFB703]/90 text-black rounded-full px-8 py-6 text-lg font-bold">
                                         Explore

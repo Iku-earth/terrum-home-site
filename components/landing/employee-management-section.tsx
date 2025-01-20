@@ -28,6 +28,8 @@ export default function EmployeeEngagementSection() {
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <a
+                                    data-umami-event="List of Activities"
+                                    data-umami-event-section="Employee Management"
                                     href="https://drive.google.com/file/d/1YudqlmL-e1SrlxxO54XTdMd5qGDQ_MxN/view?usp=sharing"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -38,6 +40,9 @@ export default function EmployeeEngagementSection() {
                                     </Button>
                                 </a>
                                 <a
+                                    data-umami-event="Go to footer"
+                                    data-umami-event-section="Employee Management"
+                                    data-umami-event-button="Event Inquiry"
                                     href="#landing-footer"
                                 >
                                     <Button

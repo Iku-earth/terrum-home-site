@@ -88,6 +88,8 @@ export default function Home() {
                         fostering sustainability.
                     </h1>
                     <a
+                        data-umami-event="Join the community"
+                        data-umami-event-section="Hero"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://chat.whatsapp.com/FnDMWzV9tcaBz0sVmzh0An"

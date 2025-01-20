@@ -40,6 +40,8 @@ export default function SupportASocialOrganisationSection() {
                             </div>
                             <div className="flex gap-4">
                                 <a
+                                    data-umami-event="Sign up to volunteer"
+                                    data-umami-event-section="Support a social organisation"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     href="https://forms.gle/YZ27dmZtWvg6ykpU9"

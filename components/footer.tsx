@@ -43,6 +43,8 @@ export default function LandingFooter() {
                     {/* Social Links */}
                     <div className="flex justify-center items-center gap-6">
                         <a
+                            data-umami-event="Open Discord"
+                            data-umami-event-section="Footer"
                             href="https://discord.gg/c4869U2JjK"
                             className="hover:opacity-80"
                         >
@@ -55,6 +57,8 @@ export default function LandingFooter() {
                             <span className="sr-only">Discord</span>
                         </a>
                         <a
+                            data-umami-event="Open Instagram"
+                            data-umami-event-section="Footer"
                             href="https://www.instagram.com/terrum.in/"
                             className="hover:opacity-80"
                         >
@@ -67,6 +71,8 @@ export default function LandingFooter() {
                             <span className="sr-only">Instagram</span>
                         </a>
                         <a
+                            data-umami-event="Open LinkedIn"
+                            data-umami-event-section="Footer"
                             href="https://www.linkedin.com/company/terrum-india/"
                             className="hover:opacity-80"
                         >
@@ -78,7 +84,9 @@ export default function LandingFooter() {
                             />
                             <span className="sr-only">LinkedIn</span>
                         </a>
-                        <a href="https://x.com/terrum_in" className="hover:opacity-80">
+                        <a data-umami-event="Open X"
+                           data-umami-event-section="Footer"
+                           href="https://x.com/terrum_in" className="hover:opacity-80">
                             <Image
                                 src="/icons/x.svg"
                                 alt="X (Previously Twitter)"
@@ -92,7 +100,10 @@ export default function LandingFooter() {
                     {/* Email */}
                     <div className="flex items-center justify-center md:justify-end gap-2 text-lg sm:text-xl">
                         <Image src="/icons/mail.svg" alt="Mail" width={32} height={32}/>
-                        <a href="mailto:contact@terrum.in" className="hover:underline">
+                        <a data-umami-event="Send mail"
+                           data-umami-event-section="Footer"
+                           data-umami-event-mail-id="contact@terrum.in" href="mailto:contact@terrum.in"
+                           className="hover:underline">
                             contact@terrum.in
                         </a>
                     </div>

@@ -33,6 +33,8 @@ export default function LandingHeader() {
                 {["Resources"].map((item) =>
                     item === "Resources" ? (
                         <a
+                            data-umami-event="Open Resources Dashboard"
+                            data-umami-event-device="Desktop"
                             key={item}
                             href="https://resources.terrum.in"
                             target="_blank"
@@ -107,6 +109,8 @@ export default function LandingHeader() {
                         (item) =>
                             item === "Resources" ? (
                                 <a
+                                    data-umami-event="Open Resources Dashboard"
+                                    data-umami-event-device="Mobile"
                                     key={item}
                                     href="https://resources.terrum.in"
                                     target="_blank"
