@@ -1,39 +1,28 @@
-import { LandingHeader } from "@/components/home-page-header";
+import {montserrat} from "@/utils/fonts";
 import "./globals.css";
-import { Inter, Nunito } from "next/font/google";
-import Footer from "@/components/footer";
-
-const inter = Inter({ subsets: ["latin"] });
-const nunito = Nunito({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-nunito",
-});
 
 export const metadata = {
-  title: "Terrum",
-  description: "One Earth, One Community - Taking Action for Climate Change",
+    title: "Terrum",
+    description: "One Earth, One Community - Taking Action for Climate Change",
 };
 
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
+                                       children,
+                                   }: {
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <body className={`${inter.className} ${nunito.variable}`}>
-        <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#071D2B] to-[#111111]">
-          <LandingHeader />
-          {children}
-          <Footer />
-          <script
-            defer
-            src={process.env.NEXT_PUBLIC_UMAMI_SRC}
-            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
-          />
+    return (
+        <html lang="en">
+        <body className={`${montserrat.className}`}>
+        <div className="flex flex-col">
+            {children}
+            <script
+                defer
+                src={process.env.NEXT_PUBLIC_UMAMI_SRC}
+                data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+            />
         </div>
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }

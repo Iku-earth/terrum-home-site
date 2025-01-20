@@ -1,95 +1,114 @@
-// components/Footer.tsx
-import React from "react";
+import Image from "next/image";
+import {mynerve} from "@/utils/fonts";
 
-export default function Footer() {
-  return (
-    <footer className=" text-gray-300 py-10 px-5">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
-        <div className="mb-5 lg:mb-0">
-          <h2 className="text-xl font-bold text-white mb-2">Social Media</h2>
-          <ul className="space-y-2">
-            <li>
-              <a
-                data-umami-event="Open Discord"
-                href="https://discord.gg/c4869U2JjK"
-                className="hover:text-white"
-              >
-                Discord
-              </a>
-            </li>
-            <li>
-              <a
-                data-umami-event="Open Instagram"
-                href="https://www.instagram.com/terrum.in/"
-                className="hover:text-white"
-              >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                data-umami-event="Open LinkedIn"
-                href="https://www.linkedin.com/company/terrum-india/"
-                className="hover:text-white"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://x.com/terrum_in"
-                data-umami-event="Open X"
-                className="hover:text-white"
-              >
-                X
-              </a>
-            </li>
-          </ul>
-        </div>
+export default function LandingFooter() {
+    return (
+        <footer
+            id="landing-footer"
+            className="w-full bg-white my-8 px-4 sm:px-8 md:px-16"
+        >
+            <div className="flex flex-col space-y-10">
+                <div className="relative">
+                    <h2
+                        className={`text-center text-xl sm:text-2xl md:text-3xl ${mynerve.className}`}
+                    >
+                        Be a part of Terrum Community Today
+                    </h2>
+                    <div className="absolute -bottom-40 -translate-y-1/2 left-[calc(50%+15rem)]">
+                        <Image
+                            src="/community-people.png"
+                            alt="Community illustration"
+                            width={178}
+                            height={420}
+                            className="object-contain"
+                        />
+                    </div>
+                </div>
 
-        {/* New Section for App Links */}
-        <div className="mb-5 lg:mb-0 lg:col-span-1 lg:ml-auto flex flex-col items-start">
-          <h2 className="text-xl font-bold text-white mb-2">Get the App</h2>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.iku&hl=en_IN"
-            target="_blank"
-            data-umami-event="Go To Playstore"
-            data-umami-event-position="Footer"
-            rel="noopener noreferrer"
-            className="mb-2"
-          >
-            <img
-              src="/btn-g-play.svg"
-              alt="Get it on Google Play"
-              className="w-36"
-            />
-          </a>
-          <a>
-            <img
-              src="/btn-appstore-coming-soon.svg"
-              alt="Download on the App Store"
-              className="w-36 mb-4"
-            />
-          </a>
-        </div>
-      </div>
+                {/* Container for the bottom section */}
+                <div className="flex flex-col md:grid md:grid-cols-3 gap-6">
+                    {/* Location */}
+                    <div className="flex items-center justify-center md:justify-start gap-2 text-lg sm:text-xl">
+                        <Image
+                            src="/icons/map-pin.svg"
+                            alt="Location"
+                            width={32}
+                            height={32}
+                        />
+                        <span className="text-sm sm:text-base">
+              Bengaluru, Karnataka, India
+            </span>
+                    </div>
 
-      {/* Bottom section */}
-      <div className="border-t border-gray-700 mt-10 pt-5">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-5 md:mb-0 text-sm text-center">
-            <span>&copy; 2024 Terrum. All rights reserved</span> |{" "}
-            <a
-              href="/privacy/policy"
-              data-umami-event="Open Privacy Policy"
-              className="hover:text-white"
-            >
-              Privacy Policy
-            </a>
-          </div>
-          <div className="flex space-x-5">Language: English (US)</div>
-        </div>
-      </div>
-    </footer>
-  );
+                    {/* Social Links */}
+                    <div className="flex justify-center items-center gap-6">
+                        <a
+                            data-umami-event="Open Discord"
+                            data-umami-event-section="Footer"
+                            href="https://discord.gg/c4869U2JjK"
+                            className="hover:opacity-80"
+                        >
+                            <Image
+                                src="/icons/discord.svg"
+                                alt="Discord"
+                                width={32}
+                                height={32}
+                            />
+                            <span className="sr-only">Discord</span>
+                        </a>
+                        <a
+                            data-umami-event="Open Instagram"
+                            data-umami-event-section="Footer"
+                            href="https://www.instagram.com/terrum.in/"
+                            className="hover:opacity-80"
+                        >
+                            <Image
+                                src="/icons/instagram.svg"
+                                alt="Instagram"
+                                width={32}
+                                height={32}
+                            />
+                            <span className="sr-only">Instagram</span>
+                        </a>
+                        <a
+                            data-umami-event="Open LinkedIn"
+                            data-umami-event-section="Footer"
+                            href="https://www.linkedin.com/company/terrum-india/"
+                            className="hover:opacity-80"
+                        >
+                            <Image
+                                src="/icons/linkedin.svg"
+                                alt="LinkedIn"
+                                width={32}
+                                height={32}
+                            />
+                            <span className="sr-only">LinkedIn</span>
+                        </a>
+                        <a data-umami-event="Open X"
+                           data-umami-event-section="Footer"
+                           href="https://x.com/terrum_in" className="hover:opacity-80">
+                            <Image
+                                src="/icons/x.svg"
+                                alt="X (Previously Twitter)"
+                                width={32}
+                                height={32}
+                            />
+                            <span className="sr-only">Twitter</span>
+                        </a>
+                    </div>
+
+                    {/* Email */}
+                    <div className="flex items-center justify-center md:justify-end gap-2 text-lg sm:text-xl">
+                        <Image src="/icons/mail.svg" alt="Mail" width={32} height={32}/>
+                        <a data-umami-event="Send mail"
+                           data-umami-event-section="Footer"
+                           data-umami-event-mail-id="contact@terrum.in" href="mailto:contact@terrum.in"
+                           className="hover:underline">
+                            contact@terrum.in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
 }
