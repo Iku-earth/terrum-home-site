@@ -29,7 +29,7 @@ export default function LandingHeader() {
       </Link>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center space-x-8">
+      {/* <div className="hidden md:flex items-center space-x-8">
         {["About", "Events", "Volunteer", "Resources", "Contact"].map(
           (item) => (
             <Link
@@ -41,10 +41,10 @@ export default function LandingHeader() {
             </Link>
           )
         )}
-      </div>
+      </div> */}
 
       {/* Hamburger Icon */}
-      <button
+      {/* <button
         className="md:hidden text-white focus:outline-none"
         onClick={toggleMenu}
       >
@@ -62,7 +62,7 @@ export default function LandingHeader() {
             d="M4 6h16M4 12h16m-7 6h7"
           />
         </svg>
-      </button>
+      </button> */}
 
       {/* Mobile Navigation Sheet */}
       <div

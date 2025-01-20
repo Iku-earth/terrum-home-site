@@ -9,7 +9,7 @@ export default function EmployeeEngagementSection() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-8">
               <div className="relative">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white">
+                <h1 className="text-5xl mt-16 md:mt-0 md:text-6xl lg:text-7xl font-bold text-white">
                   employee engagement
                 </h1>
                 <Image
@@ -17,7 +17,7 @@ export default function EmployeeEngagementSection() {
                   alt="Decorative leaf"
                   width={146}
                   height={163}
-                  className="absolute -top-8 right-0"
+                  className="hidden md:block absolute -top-8 right-0"
                 />
               </div>
               <p className="text-white/90 text-lg leading-relaxed max-w-xl">

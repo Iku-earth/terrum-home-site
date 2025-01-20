@@ -15,7 +15,7 @@ export default function LandingFooter() {
           >
             Be a part of Terrum Community Today
           </h2>
-          <div className="absolute -bottom-40  -translate-y-1/2 left-[calc(50%+15rem)]">
+          <div className="absolute -bottom-40 -translate-y-1/2 left-[calc(50%+15rem)]">
             <Image
               src="/community-people.png"
               alt="Community illustration"
@@ -26,9 +26,10 @@ export default function LandingFooter() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Container for the bottom section */}
+        <div className="flex flex-col md:grid md:grid-cols-3 gap-6">
           {/* Location */}
-          <div className="flex items-center gap-2 text-lg sm:text-xl">
+          <div className="flex items-center justify-center md:justify-start gap-2 text-lg sm:text-xl">
             <Image
               src="/icons/map-pin.svg"
               alt="Location"
@@ -90,7 +91,7 @@ export default function LandingFooter() {
           </div>
 
           {/* Email */}
-          <div className="flex justify-end items-center gap-2 text-lg sm:text-xl">
+          <div className="flex items-center justify-center md:justify-end gap-2 text-lg sm:text-xl">
             <Image src="/icons/mail.svg" alt="Mail" width={32} height={32} />
             <a href="mailto:contact@terrum.in" className="hover:underline">
               contact@terrum.in

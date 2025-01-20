@@ -56,7 +56,7 @@ export default function SupportASocialOrganisationSection() {
                 alt="People engaged in outdoor activities"
                 height={400}
                 width={370}
-                className="object-contain h-[400px] w-[370px]"
+                className="hidden md:block object-contain h-[400px] w-[370px]"
               />
             </div>
           </div>
