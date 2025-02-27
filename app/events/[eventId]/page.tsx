@@ -29,11 +29,16 @@ type MetadataProps = {
   params: { eventId: string };
 };
 
+type Props = {
+  params: Promise<{ eventId: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
+
 export async function generateMetadata(
-  { params }: MetadataProps,
+  { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { eventId } = params;
+  const eventId = (await params).eventId;
 
   try {
     const event = await getEvent(eventId);
