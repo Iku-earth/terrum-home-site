@@ -38,18 +38,18 @@ async function getEvent(eventId: string): Promise<Event> {
   return res.json()
 }
 
-export default async function EventPage({ params }: { params: { eventId: string } }) {
+export default async function EventPage({ params }: { params: Promise<{ eventId: string }> }) {
   // Get the event ID from the URL
-  const { eventId } = await params
+  const eventId = (await params).eventId;
 
   // Fetch the event data
-  let event: Event
+  let event: Event;
 
   try {
-    event = await getEvent(eventId)
+    event = await getEvent(eventId);
   } catch (error) {
-    console.error("Error fetching event:", error)
-    notFound()
+    console.error("Error fetching event:", error);
+    notFound();
   }
 
   return (
