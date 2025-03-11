@@ -3,7 +3,7 @@ import {Button} from "@/components/ui/button";
 
 export default function OpenSourceDatabaseSection() {
     return (
-        <div className="bg-[#435D41]">
+        <div className="bg-[#435D41]" id="open-source-database-section">
             <div className="bg-[#7D4546] rounded-tl-[30px] rounded-tr-[30px]">
                 <div className="container px-4 py-8 mx-auto">
                     <div className="grid lg:grid-cols-2 gap-8 items-center">

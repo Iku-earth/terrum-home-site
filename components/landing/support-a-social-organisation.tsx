@@ -3,7 +3,7 @@ import {Button} from "@/components/ui/button";
 
 export default function SupportASocialOrganisationSection() {
     return (
-        <div className="bg-[#7D4546]">
+        <div className="bg-[#7D4546]" id="support-a-social-organisation-section">
             <div className="bg-[#435D41] rounded-tl-[30px] rounded-tr-[30px]">
                 <div className="container px-4 py-24 mx-auto">
                     <div className="flex flex-row lg:gap-8 items-center">

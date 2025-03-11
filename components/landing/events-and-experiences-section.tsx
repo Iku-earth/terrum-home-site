@@ -35,7 +35,7 @@ export default function EventsPage() {
     ];
 
     return (
-        <div className="bg-[#435D41] text-white" id="events-and-experiences">
+        <div className="bg-[#435D41] text-white" id="events-and-experiences-section">
             {/* Sticky header container */}
             <div className="sticky top-0 z-50 bg-[#435D41] p-8">
                 <h1 className="text-4xl md:text-5xl font-bold text-center">

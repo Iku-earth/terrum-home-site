@@ -3,7 +3,7 @@ import {Button} from "@/components/ui/button";
 
 export default function EmployeeEngagementSection() {
     return (
-        <div className="bg-[#435D41]">
+        <div className="bg-[#435D41]" id="employee-engagement-section">
             <div className="bg-[#7D4546] rounded-tl-[30px] rounded-tr-[30px]">
                 <div className="container px-4 mx-auto">
                     <div className="grid lg:grid-cols-2 gap-8 items-center">
