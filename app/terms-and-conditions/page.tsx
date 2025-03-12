@@ -1,4 +1,52 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions | Terrum",
+  description:
+    "Read the terms and conditions governing your use of Terrum's platform, services, and community engagement activities. Learn about user eligibility, community guidelines, and policies.",
+  keywords: [
+    "Terms and conditions",
+    "User agreement",
+    "Legal terms",
+    "Community guidelines",
+    "User eligibility",
+    "Intellectual property",
+    "Service terms",
+    "Volunteer terms",
+    "Account termination",
+  ],
+  icons: {
+    icon: "/terrum_circle_64x64.ico",
+    apple: "/terrum_circle_64x64.png",
+  },
+  openGraph: {
+    title: "Terms and Conditions | Terrum",
+    locale: "en_US",
+    description:
+      "Understand the terms governing your participation in Terrum's community. Our terms outline user responsibilities, community standards, and the conditions for using our platform.",
+    url: "https://terrum.in/terms-and-conditions",
+    type: "website",
+    images: [
+      {
+        url: "https://terrum.in/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Terrum Banner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@terrum_in",
+    title: "Terms and Conditions | Terrum",
+    description:
+      "Before joining Terrum's sustainable movement, review our terms and conditions outlining community guidelines, volunteer engagement, and platform usage policies.",
+    images: [
+      "https://pbs.twimg.com/profile_images/1776445625254793216/19fhNGuT_400x400.jpg",
+    ],
+  },
+};
 
 export default function TermsAndConditions() {
   return (

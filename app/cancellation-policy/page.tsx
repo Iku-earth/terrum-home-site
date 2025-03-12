@@ -1,3 +1,51 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cancellation Policy | Terrum",
+  description:
+    "Review Terrum's cancellation policy for events and digital services. Learn about our guidelines, refund eligibility, and how to cancel your participation.",
+  keywords: [
+    "Cancellation policy",
+    "Event cancellation",
+    "Service cancellation",
+    "Refund policy",
+    "Digital services",
+    "Community events",
+    "Cancellation terms",
+    "Terrum support",
+  ],
+  icons: {
+    icon: "/terrum_circle_64x64.ico",
+    apple: "/terrum_circle_64x64.png",
+  },
+  openGraph: {
+    title: "Cancellation Policy | Terrum",
+    locale: "en_US",
+    description:
+      "Understand Terrum's cancellation policy, including guidelines for event cancellations, digital service refunds, and important terms for participants.",
+    url: "https://terrum.in/cancellation-policy",
+    type: "website",
+    images: [
+      {
+        url: "https://terrum.in/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Terrum Cancellation Policy Banner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@terrum_in",
+    title: "Cancellation Policy | Terrum",
+    description:
+      "Learn about Terrum's cancellation policy for events and digital services, including refund eligibility and cancellation guidelines.",
+    images: [
+      "https://pbs.twimg.com/profile_images/1776445625254793216/19fhNGuT_400x400.jpg",
+    ],
+  },
+};
+
 export default function CancellationRefundsPolicy() {
   return (
     <div className="bg-gradient-to-b from-[#071D2B] to-[#111111]">

@@ -1,3 +1,53 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Shipping Policy | Terrum",
+  description:
+    "Learn about Terrum's shipping policy. As a digital platform focused on community engagement and sustainability initiatives, we do not ship physical products.",
+  keywords: [
+    "Shipping policy",
+    "Digital services",
+    "No physical products",
+    "Event confirmation",
+    "Digital delivery",
+    "Terrum services",
+    "Online platform",
+    "Virtual offerings",
+    "Event registration",
+    "Third-party partners",
+  ],
+  icons: {
+    icon: "/terrum_circle_64x64.ico",
+    apple: "/terrum_circle_64x64.png",
+  },
+  openGraph: {
+    title: "Shipping Policy | Terrum",
+    locale: "en_US",
+    description:
+      "Terrum is a digital platform offering community engagement and sustainability initiatives without physical product shipping. Learn about our digital delivery methods.",
+    url: "https://terrum.in/shipping-policy",
+    type: "website",
+    images: [
+      {
+        url: "https://terrum.in/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Terrum Banner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@terrum_in",
+    title: "Shipping Policy | Terrum",
+    description:
+      "Terrum focuses on digital services and in-person events without shipping physical products. Find out how we deliver our community and sustainability initiatives.",
+    images: [
+      "https://pbs.twimg.com/profile_images/1776445625254793216/19fhNGuT_400x400.jpg",
+    ],
+  },
+};
+
 export default function ShippingPolicy() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#071D2B] to-[#111111]">
