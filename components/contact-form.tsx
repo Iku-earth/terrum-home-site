@@ -51,14 +51,19 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
-      console.log(values);
-
-      toast("Message sent!");
-
-      form.reset();
+      const response = await fetch("/api/submit-contact-us-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+      if (response.ok) {
+        toast("Message sent!");
+        form.reset();
+      } else {
+        throw new Error("Failed to send message");
+      }
     } catch (error) {
       toast("Something went wrong.");
     } finally {
