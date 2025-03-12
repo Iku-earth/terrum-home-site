@@ -18,22 +18,23 @@ export default function TermsAndConditions() {
           <h2 className="text-xl font-semibold mb-2">1. Definitions</h2>
           <ul className="ml-4 list-disc pl-4">
             <li>
-              <strong>"Terrum"</strong> refers to the website, platform, and
-              services operated by us.
+              <strong>&quot;Terrum&quot;</strong> refers to the website,
+              platform, and services operated by us.
             </li>
             <li>
-              <strong>"User"</strong>, <strong>"You"</strong>, or{" "}
-              <strong>"Your"</strong> refers to any individual or entity using
-              Terrum.
+              <strong>&quot;User&quot;</strong>,{" "}
+              <strong>&quot;You&quot;</strong>, or{" "}
+              <strong>&quot;Your&quot;</strong> refers to any individual or
+              entity using Terrum.
             </li>
             <li>
-              <strong>"Services"</strong> include community events, volunteering
-              opportunities, sustainable living resources, and other related
-              activities.
+              <strong>&quot;Services&quot;</strong> include community events,
+              volunteering opportunities, sustainable living resources, and
+              other related activities.
             </li>
             <li>
-              <strong>"Content"</strong> refers to text, images, videos, and any
-              other materials available on the platform.
+              <strong>&quot;Content&quot;</strong> refers to text, images,
+              videos, and any other materials available on the platform.
             </li>
           </ul>
         </section>
@@ -79,8 +80,8 @@ export default function TermsAndConditions() {
             </li>
             <li>
               <strong>No Unauthorized Promotions</strong>: Any personal
-              endorsements or brand promotions by users do not reflect Terrum's
-              official stance.
+              endorsements or brand promotions by users do not reflect
+              Terrum&apos;s official stance.
             </li>
           </ul>
         </section>
@@ -117,7 +118,7 @@ export default function TermsAndConditions() {
             </li>
             <li>
               Users <strong>may not</strong> copy, distribute, or modify
-              Terrum's content without explicit permission.
+              Terrum&apos;s content without explicit permission.
             </li>
             <li>
               If you submit content (photos, testimonials, etc.), you grant
@@ -217,7 +218,7 @@ export default function TermsAndConditions() {
             </a>
           </p>
           <p className="ml-4">
-            Thank you for being part of Terrum's sustainable movement!
+            Thank you for being part of Terrum&apos;s sustainable movement!
           </p>
         </section>
       </div>

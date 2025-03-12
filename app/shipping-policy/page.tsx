@@ -65,7 +65,7 @@ export default function ShippingPolicy() {
           </p>
           <p className="ml-4 mt-2">
             Thank you for being part of{" "}
-            <strong>Terrum's sustainable community!</strong>
+            <strong>Terrum&apos;s sustainable community!</strong>
           </p>
         </section>
       </div>
