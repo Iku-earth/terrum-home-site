@@ -27,12 +27,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: "https://terrum.in/shipping-policy",
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
       url: "https://terrum.in/terms-and-conditions",
       lastModified: new Date(),
       changeFrequency: "yearly",

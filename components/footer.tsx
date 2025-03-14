@@ -45,14 +45,6 @@ export default function LandingFooter() {
             Privacy Policy
           </Link>
           <Link
-            href="/shipping-policy"
-            className="text-sm hover:underline"
-            data-umami-event="View Shipping Policy"
-            data-umami-event-section="Footer"
-          >
-            Shipping Policy
-          </Link>
-          <Link
             href="/contact-us"
             className="text-sm hover:underline"
             data-umami-event="View Contact Us"
