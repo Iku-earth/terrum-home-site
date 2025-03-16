@@ -55,7 +55,7 @@ export default function SupportASocialOrganisationSection() {
                         </div>
                         <div className="relative aspect-[4/3] lg:aspect-square">
                             <Image
-                                src="/support-a-social-organisation.png?height=800&width=800"
+                                src="/landing/support-a-social-organisation.png"
                                 alt="People engaged in outdoor activities"
                                 height={400}
                                 width={370}

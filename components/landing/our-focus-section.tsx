@@ -37,7 +37,7 @@ export default function OurFocusSection() {
                     </div>
                     <div className="relative">
                         <Image
-                            src="/theme-based-local-communities.png"
+                            src="/landing/theme-based-local-communities.png"
                             alt="Community members reading together"
                             width={500}
                             height={400}
@@ -50,7 +50,7 @@ export default function OurFocusSection() {
                 <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center mb-32">
                     <div className="relative order-2 md:order-1">
                         <Image
-                            src="/events-and-experiences.png"
+                            src="/landing/events-and-experiences.png"
                             alt="People enjoying outdoor activities"
                             width={500}
                             height={400}
@@ -87,7 +87,7 @@ export default function OurFocusSection() {
                     </div>
                     <div className="relative">
                         <Image
-                            src="/support-for-social-organisations.png"
+                            src="/landing/support-for-social-organisations.png"
                             alt="Hands joined together in unity"
                             width={500}
                             height={400}
@@ -100,7 +100,7 @@ export default function OurFocusSection() {
                 <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
                     <div className="relative order-2 md:order-1">
                         <Image
-                            src="/sustainable-living.png"
+                            src="/landing/sustainable-living.png"
                             alt="Hands holding a fern leaf"
                             width={500}
                             height={400}

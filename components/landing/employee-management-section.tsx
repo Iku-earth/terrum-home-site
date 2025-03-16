@@ -54,7 +54,7 @@ export default function EmployeeEngagementSection() {
                         </div>
                         <div className="relative aspect-[4/3] lg:aspect-square">
                             <Image
-                                src="/employee-engagement.png?height=800&width=800"
+                                src="/landing/employee-engagement.png"
                                 alt="People engaged in outdoor activities"
                                 fill
                                 className="object-contain"
